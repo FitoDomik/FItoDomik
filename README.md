@@ -7,8 +7,9 @@
 
 <div align="center">
 
-| [<img src="https://github.com/Legenda658.png" width="80" style="border-radius:50%"/><br>**Вячеслав Домнин**](https://github.com/Legenda658) | [<img src="https://github.com/IzikTermux.png" width="80" style="border-radius:50%"/><br>**Илья Изразцов**](https://github.com/IzikTermux) |
-|:---:|:---:|
+[<img src="https://github.com/Legenda658.png" width="80" style="border-radius:50%"/><br>**Вячеслав Домнин**](https://github.com/Legenda658)
+&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="https://github.com/IzikTermux.png" width="80" style="border-radius:50%"/><br>**Илья Изразцов**](https://github.com/IzikTermux)
 
 </div>
 
