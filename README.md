@@ -1,12 +1,3 @@
-# 🌿 Добро пожаловать в мой зеленый мир! 🌿
-
-```
-                    🌱                           🌱
-                ╔════════════════════════════════════╗
-            🌿  ║    💚 ЭКОСИСТЕМА РАЗРАБОТКИ 💚    ║  🌿
-                ╚════════════════════════════════════╝
-                    🌱                           🌱
-```
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2EA44F,50:4CAF50,100:8BC34A&height=120&section=header&text=🌱%20ФитоДомик%20🌱&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Создаем%20зеленое%20будущее&descAlignY=55&descSize=18" />
