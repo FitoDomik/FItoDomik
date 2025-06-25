@@ -1,297 +1,77 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домнин Вячеслав Игоревич - Портфолио</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .subtitle {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        .service-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            transition: transform 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .service-card h3 {
-            margin-top: 0;
-            color: #3498db;
-        }
-        .service-card p {
-            margin-bottom: 20px;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            border: none;
-        }
-        .btn:hover {
-            background-color: #2980b9;
-        }
-        .about {
-            background-color: #f4f4f4;
-            padding: 30px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        .skills {
-            margin-bottom: 30px;
-        }
-        .skills ul {
-            list-style-type: none;
-            padding-left: 20px;
-        }
-        .skills li {
-            margin-bottom: 5px;
-            position: relative;
-        }
-        .skills li:before {
-            content: "•";
-            color: #3498db;
-            font-weight: bold;
-            position: absolute;
-            left: -15px;
-        }
-        .order-form {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-            z-index: 1000;
-            width: 90%;
-            max-width: 500px;
-        }
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 999;
-        }
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            font-size: 1.5em;
-        }
-        form div {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        textarea {
-            height: 100px;
-        }
-        /* Медиа-запросы для адаптивности */
-        @media (max-width: 768px) {
-            .services {
-                grid-template-columns: 1fr;
-            }
-            .service-card {
-                margin-bottom: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Домнин Вячеслав Игоревич</h1>
-            <div class="subtitle">Программист, инженер, разработчик решений</div>
-        </div>
-    </header>
-    <div class="container">
-        <section class="services">
-            <div class="service-card">
-                <h3>Telegram-боты</h3>
-                <p>Разработка ботов любой сложности — от простых информационных до сложных с интеграцией БД, API и бизнес-логикой.</p>
-                <button class="btn" onclick="openOrderForm('Telegram-боты')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Сайты</h3>
-                <p>Создание сайтов различной сложности: от простых лендингов до комплексных веб-приложений с базами данных.</p>
-                <button class="btn" onclick="openOrderForm('Сайты')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Arduino-проекты</h3>
-                <p>Разработка устройств на Arduino, проектирование электронных схем, написание программного кода.</p>
-                <button class="btn" onclick="openOrderForm('Arduino-проекты')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Чертежи и 3D-модели</h3>
-                <p>Создание технических чертежей, 3D-моделей и документации в программе Компас.</p>
-                <button class="btn" onclick="openOrderForm('Чертежи и 3D-модели')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Конструкторские проекты</h3>
-                <p>Разработка инженерных и конструкторских решений, включая сборки, спецификации и документацию.</p>
-                <button class="btn" onclick="openOrderForm('Конструкторские проекты')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Исследовательские работы</h3>
-                <p>Подготовка проектов для школы, конкурсов и научных мероприятий.</p>
-                <button class="btn" onclick="openOrderForm('Исследовательские работы')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Python-приложения</h3>
-                <p>Разработка десктопных приложений с графическим интерфейсом, логикой и подключением к базам данных.</p>
-                <button class="btn" onclick="openOrderForm('Python-приложения')">Заказать</button>
-            </div>
-            <div class="service-card">
-                <h3>Другое</h3>
-                <p>Любые другие проекты в области программирования, инженерии и автоматизации.</p>
-                <button class="btn" onclick="openOrderForm('Другое')">Заказать</button>
-            </div>
-        </section>
-        <section class="about">
-            <h2>Обо мне</h2>
-            <p>Начинающий программист с 7-летним опытом работы на Python и 2-летним — на PHP. Прошёл курсы робототехники в колледже "СТАНКИН", призёр конкурса "Инженеры будущего". Дополнительно владею C++ (в том числе для Arduino) и Компас (чертежи, сборки, спецификации). Диплом с отличием по профессии «Чертежник-конструктор».</p>
-            <p>Возраст: 16 лет</p>
-            <div class="skills">
-                <h3>Навыки:</h3>
-                <ul>
-                    <li>Python, PHP, C++, Arduino</li>
-                    <li>Веб-разработка, работа с базами данных</li>
-                    <li>Моделирование в Компас</li>
-                    <li>Робототехника</li>
-                </ul>
-            </div>
-            <h3>Чем я занимаюсь?</h3>
-            <p>Я создаю цифровые и инженерные решения под задачи любой сложности.</p>
-            <h4>👨‍💻 Программирование и веб-разработка</h4>
-            <p>Telegram-боты любой сложности (от простых до с интеграцией БД, API и логикой)</p>
-            <p><strong>Сайты:</strong></p>
-            <ul>
-                <li>Промо-страницы и лендинги</li>
-                <li>Сайты со средней логикой и базой данных</li>
-                <li>Сложные веб-проекты (интернет-магазины, учётные системы, админки)</li>
-            </ul>
-            <h4>🤖 Инженерия и исследования</h4>
-            <ul>
-                <li>Arduino-проекты (разработка на C++)</li>
-                <li>Чертежи и 3D-модели в Компас</li>
-                <li>Конструкторские проекты (сборки, спецификации и т.д.)</li>
-                <li>Школьные и конкурсные инженерные проекты</li>
-                <li>Исследовательские работы на заданную тему</li>
-            </ul>
-            <h4>🛠 Приложения и автоматизация</h4>
-            <ul>
-                <li>Десктопные приложения на Python (с графикой, логикой, подключением к БД)</li>
-                <li>Автоматизация рутинных задач (боты, скрипты, мини-программы)</li>
-            </ul>
-        </section>
-    </div>
-    <div class="overlay" id="overlay"></div>
-    <div class="order-form" id="orderForm">
-        <div class="close-btn" onclick="closeOrderForm()">×</div>
-        <h2>Заказать услугу</h2>
-        <p id="selectedService"></p>
-        <form id="contactForm">
-            <div>
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div>
-                <label for="request">Что нужно:</label>
-                <textarea id="request" name="request" required></textarea>
-            </div>
-            <input type="hidden" id="service-input" name="service" value="">
-            <button type="submit" class="btn">Отправить</button>
-        </form>
-    </div>
-    <script>
-        // Функции для работы с формой заказа
-        function openOrderForm(service) {
-            document.getElementById('selectedService').textContent = 'Выбранная услуга: ' + service;
-            document.getElementById('service-input').value = service;
-            document.getElementById('overlay').style.display = 'block';
-            document.getElementById('orderForm').style.display = 'block';
-        }
-
-        function closeOrderForm() {
-            document.getElementById('overlay').style.display = 'none';
-            document.getElementById('orderForm').style.display = 'none';
-        }
-
-        // Обработка отправки формы
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Получаем данные из формы
-                const name = document.getElementById('name').value;
-                const request = document.getElementById('request').value;
-                const service = document.getElementById('service-input').value;
-                
-                // Вывод сообщения об отправке (в простой версии без сервера)
-                alert('Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.');
-                
-                // Очищаем форму и закрываем её
-                document.getElementById('name').value = '';
-                document.getElementById('request').value = '';
-                closeOrderForm();
-            });
-        });
-    </script>
-</body>
-</html> 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2EA44F,50:4CAF50,100:8BC34A&height=180&section=header&text=🌱%20ФитоДомик%20🏠&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=40&desc=Умный%20дом%20для%20ваших%20растений&descAlignY=65&descSize=20" />
+</div>
+<div align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=45&pause=1000&color=2EA44F&center=true&vCenter=true&random=false&width=1000&height=100&lines=Домнин+Вячеслав;Изразцов+Илья;Представляют+проект;ФитоДомик" alt="Typing SVG" />
+</div>
+<div align="center" style="display: flex; justify-content: center; gap: 40px; margin: 20px 0;">
+  <a href="https://github.com/Legenda658" style="text-decoration: none; color: inherit;" target="_blank">
+    <img src="https://github.com/Legenda658.png" width="60" style="border-radius: 50%; vertical-align: middle;" alt="Вячеслав Домнин"/>
+    <span style="font-size: 1.2em; margin-left: 10px; vertical-align: middle;"><b>Вячеслав Домнин</b></span>
+  </a>
+  <a href="https://github.com/IzikTermux" style="text-decoration: none; color: inherit;" target="_blank">
+    <img src="https://github.com/IzikTermux.png" width="60" style="border-radius: 50%; vertical-align: middle;" alt="Илья Изразцов"/>
+    <span style="font-size: 1.2em; margin-left: 10px; vertical-align: middle;"><b>Илья Изразцов</b></span>
+  </a>
+</div>
+<div align="center">
+<p align="left"></p>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Legenda658&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=true&order=1&cache_seconds=60" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Legenda658&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=true&order=2" height="150" alt="languages graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=Legenda658&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4&cache_seconds=60" height="150" alt="trophy graph" />
+</div>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=0:2EA44F,100:4CAF50&height=20" />
+</div>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6&height=40&section=divider&text=🛠️%20Мои%20технологии&fontSize=25&fontColor=2EA44F" />
+</div>
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="73" alt="php logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="73" alt="python logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="73" alt="css3 logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="73" alt="arduino logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="73" alt="javascript logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" height="73" alt="raspberrypi logo"  />
+  <img width="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="73" alt="mysql logo"  />
+</div>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=slice&height=20&color=4CAF50&reversal=true&fontAlign=44&textBg=false&animation=scaleIn&section=footer&descAlign=47&fontAlignY=20" />
+</div>
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <a href="https://t.me/FitoDomik">
+          <img src="https://img.shields.io/badge/Telegram_Чат-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=2CA5E0&color=white" alt="Telegram Chat" height="50"/>
+        </a>
+        <br>
+        <sub><b>🌿 Общайтесь с создателем</b></sub>
+      </td>
+      <td align="center" width="33%">
+        <a href="https://t.me/FitoDomik_429">
+          <img src="https://img.shields.io/badge/Telegram_Канал-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&labelColor=2CA5E0&color=white" alt="Telegram Channel" height="50"/>
+        </a>
+        <br>
+        <sub><b>📡 Следите за новостями проекта</b></sub>
+      </td>
+      <td align="center" width="33%">
+        <a href="https://fitodomik.ru">
+          <img src="https://img.shields.io/badge/Сайт_ФитоДомик-2EA44F?style=for-the-badge&logo=leaf&logoColor=white&labelColor=2EA44F&color=white" alt="FitoDomik Website" height="50"/>
+        </a>
+        <br>
+        <sub><b>🏠 Официальный сайт проекта</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8BC34A,50:4CAF50,100:2EA44F&height=100&section=footer&animation=twinkling" />
+</div>
