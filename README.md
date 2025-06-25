@@ -4,16 +4,14 @@
 <div align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=45&pause=1000&color=2EA44F&center=true&vCenter=true&random=false&width=1000&height=100&lines=Домнин+Вячеслав;Изразцов+Илья;Представляют+проект;ФитоДомик" alt="Typing SVG" />
 </div>
-<div align="center" style="display: flex; justify-content: center; gap: 40px; margin: 20px 0;">
-  <a href="https://github.com/Legenda658" style="text-decoration: none; color: inherit;" target="_blank">
-    <img src="https://github.com/Legenda658.png" width="60" style="border-radius: 50%; vertical-align: middle;" alt="Вячеслав Домнин"/>
-    <span style="font-size: 1.2em; margin-left: 10px; vertical-align: middle;"><b>Вячеслав Домнин</b></span>
-  </a>
-  <a href="https://github.com/IzikTermux" style="text-decoration: none; color: inherit;" target="_blank">
-    <img src="https://github.com/IzikTermux.png" width="60" style="border-radius: 50%; vertical-align: middle;" alt="Илья Изразцов"/>
-    <span style="font-size: 1.2em; margin-left: 10px; vertical-align: middle;"><b>Илья Изразцов</b></span>
-  </a>
+
+<div align="center">
+
+| [<img src="https://github.com/Legenda658.png" width="80" style="border-radius:50%"/><br>**Вячеслав Домнин**](https://github.com/Legenda658) | [<img src="https://github.com/IzikTermux.png" width="80" style="border-radius:50%"/><br>**Илья Изразцов**](https://github.com/IzikTermux) |
+|:---:|:---:|
+
 </div>
+
 <div align="center">
 <p align="left"></p>
 <div align="center">
