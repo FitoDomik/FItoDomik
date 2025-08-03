@@ -1,30 +1,13 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2EA44F,50:4CAF50,100:8BC34A&height=180&section=header&text=🌱%20ФитоДомик%20🏠&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=40&desc=Умный%20дом%20для%20ваших%20растений&descAlignY=65&descSize=20" />
-</div>
-<div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=45&pause=1000&color=2EA44F&center=true&vCenter=true&random=false&width=1000&height=100&lines=Домнин+Вячеслав;Изразцов+Илья;Представляют+проект;ФитоДомик" alt="Typing SVG" />
-</div>
-
-<div align="center">
-
-[<img src="https://github.com/Legenda658.png" width="80" style="border-radius:50%"/><br>**Вячеслав Домнин**](https://github.com/Legenda658)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[<img src="https://github.com/IzikTermux.png" width="80" style="border-radius:50%"/><br>**Илья Изразцов**](https://github.com/IzikTermux)
-
-</div>
-
 <div align="center">
 <p align="left"></p>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Legenda658&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=true&order=1&cache_seconds=60" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Legenda658&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=true&order=2" height="150" alt="languages graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=Legenda658&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4&cache_seconds=60" height="150" alt="trophy graph" />
-</div>
+  <img src="https://github-readme-stats.vercel.app/api?username=FitoDomik&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=true&order=1&cache_seconds=60" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=FitoDomik&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=true&order=2" height="150" alt="languages graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=FitoDomik&theme=nord&margin-w=8&margin-h=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=slice&color=0:2EA44F,100:4CAF50&height=20" />
-</div>
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6&height=40&section=divider&text=🛠️%20Мои%20технологии&fontSize=25&fontColor=2EA44F" />
 </div>
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="73" alt="php logo"  />
