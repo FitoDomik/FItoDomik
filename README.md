@@ -59,5 +59,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8BC34A,50:4CAF50,100:2EA44F&height=100&section=footer&animation=twinkling" />
 </div>
-
-![](https://github-profile-trophy.screw-hand.vercel.app/?username=FitoDomik)
