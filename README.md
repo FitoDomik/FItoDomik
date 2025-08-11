@@ -5,7 +5,7 @@
 <div align="center">
  <img src="https://github-readme-stats.vercel.app/api?username=FitoDomik&hide_title=true&hide_rank=false&show_icons=true&include_all_commits=false&count_private=false&disable_animations=false&theme=dark&locale=en&hide_border=true&order=1" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=FitoDomik&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=8&theme=dark&hide_border=true&order=2" height="150" alt="languages graph"  />
-  <img src="https://github-profile-trophy.vercel.app?username=FitoDomik&theme=nord&column=10&row=1&margin-w=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
+  <img src="https://github-profile-trophy.vercel.app?username=FitoDomik&theme=nord&column=8&row=1&margin-w=8&no-bg=true&no-frame=true&order=4" height="150" alt="trophy graph"  />
 </div>
 </div>
 <div align="center">
