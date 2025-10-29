@@ -68,7 +68,7 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="https://your-site-url.com">
+      <a href="https://farm429.ru">
         <img src="https://img.shields.io/badge/🚀_Попробовать_сейчас-FF6B6B?style=for-the-badge&logo=rocket&logoColor=white&labelColor=FF6B6B&color=white" alt="Try Now" height="65"/>
       </a>
     </td>
